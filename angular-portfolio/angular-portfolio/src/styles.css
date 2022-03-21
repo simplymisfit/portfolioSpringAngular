@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 .project-cards {
+  margin: 3% 3% 3% 3%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 40rem);
+  grid-template-columns: repeat(auto-fill, 70%);
   grid-gap: 2rem;
   justify-content: center;
-  padding-left: 0;
 }
 
 .project-cards > li {
