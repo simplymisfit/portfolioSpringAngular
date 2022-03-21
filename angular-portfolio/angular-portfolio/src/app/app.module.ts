@@ -9,14 +9,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 import { WebpagesComponent } from './components/webpages/webpages.component';
 import { PortfolioDetailsComponent } from './components/portfolio-details/portfolio-details.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: 'portfolio/:id', component: PortfolioDetailsComponent },
   { path: 'portfolio', component: PortfolioListComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'webpages', component: WebpagesComponent },
-  { path: '', redirectTo: '/', pathMatch: 'full' },
-  { path: '**', redirectTo: '/', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ const routes: Routes = [
     ContactComponent,
     WebpagesComponent,
     PortfolioDetailsComponent,
+    HomeComponent,
   ],
   imports: [RouterModule.forRoot(routes), BrowserModule, HttpClientModule],
   providers: [PortfolioService],
