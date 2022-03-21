@@ -1,6 +1,6 @@
 <div class="page-wrapper">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" style="margin-left: 1%" href="#"
+    <a class="navbar-brand" style="margin-left: 1%" routerLink="/"
       >Filip Rosochacki</a
     >
     <button
@@ -16,13 +16,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home</a>
-        <a class="nav-item nav-link" href="#">Portfolios</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
+        <a class="nav-item nav-link active" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLink="portfolio">Portfolios</a>
+        <a class="nav-item nav-link" routerLink="contact">Contact</a>
       </div>
     </div>
   </nav>
   <div class="page-container">
-    <app-portfolio-list></app-portfolio-list>
+    <router-outlet></router-outlet>
   </div>
 </div>
