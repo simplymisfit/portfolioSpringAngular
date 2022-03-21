@@ -16,6 +16,11 @@ export class PortfolioService {
       .get<GetResponse>(this.baseUrl)
       .pipe(map((response) => response._embedded.portfolios));
   }
+
+  getPortfolio(thePortfolioId: number): Observable<Portfolio> {
+    const portfolioUrl = `${this.baseUrl}/${thePortfolioId}`;
+    return this.httpClient.get<Portfolio>(portfolioUrl);
+  }
 }
 
 interface GetResponse {
