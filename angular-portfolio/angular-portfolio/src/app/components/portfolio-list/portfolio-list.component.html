@@ -1,10 +1,13 @@
 <div *ngFor="let tempPortfolio of portfolios">
-  <div class="project-cards">
-    <li style="background-image: url('{{ tempPortfolio.imageUrl }}')">
-      <div class="project-info">
-        <span class="title"> {{ tempPortfolio.name }} </span>
-        {{ tempPortfolio.description }}
-      </div>
-    </li>
-  </div>
+  <a routerLink="portofolio/{{ tempPortfolio.id }}">
+    <div class="project-cards">
+      <li style="background-image: url('{{ tempPortfolio.imageUrl }}')">
+        <div class="project-info">
+          <span class="title"> {{ tempPortfolio.name }} </span>
+          {{ tempPortfolio.description }}
+          {{ tempPortfolio.id }}
+        </div>
+      </li>
+    </div>
+  </a>
 </div>

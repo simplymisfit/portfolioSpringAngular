@@ -16,10 +16,8 @@ export class PortfolioListComponent implements OnInit {
   }
 
   listPortfolios() {
-    this.portfolioService.getPortfolioList().subscribe(
-      data => {
-        this.portfolios = data;
-      }
-    );
+    this.portfolioService.getPortfolioList().subscribe((data) => {
+      this.portfolios = data;
+    });
   }
 }
