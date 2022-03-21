@@ -11,7 +11,7 @@ import { WebpagesComponent } from './components/webpages/webpages.component';
 import { PortfolioDetailsComponent } from './components/portfolio-details/portfolio-details.component';
 
 const routes: Routes = [
-  { path: 'portfolio/:id', component: PortfolioListComponent },
+  { path: 'portfolio/:id', component: PortfolioDetailsComponent },
   { path: 'portfolio', component: PortfolioListComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'webpages', component: WebpagesComponent },

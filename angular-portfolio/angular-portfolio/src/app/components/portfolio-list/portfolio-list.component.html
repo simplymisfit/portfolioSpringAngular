@@ -1,11 +1,10 @@
 <div *ngFor="let tempPortfolio of portfolios">
-  <a routerLink="portofolio/{{ tempPortfolio.id }}">
+  <a routerLink="/portfolio/{{ tempPortfolio.id }}">
     <div class="project-cards">
       <li style="background-image: url('{{ tempPortfolio.imageUrl }}')">
         <div class="project-info">
           <span class="title"> {{ tempPortfolio.name }} </span>
           {{ tempPortfolio.description }}
-          {{ tempPortfolio.id }}
         </div>
       </li>
     </div>
