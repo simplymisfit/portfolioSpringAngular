@@ -11,6 +11,8 @@ import { WebpagesComponent } from './components/webpages/webpages.component';
 import { PortfolioDetailsComponent } from './components/portfolio-details/portfolio-details.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PageOneComponent } from './components/page-one/page-one.component';
+import { PageTwoComponent } from './components/page-two/page-two.component';
 
 const routes: Routes = [
   { path: 'portfolio/:id', component: PortfolioDetailsComponent },
@@ -29,6 +31,8 @@ const routes: Routes = [
     WebpagesComponent,
     PortfolioDetailsComponent,
     HomeComponent,
+    PageOneComponent,
+    PageTwoComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),
