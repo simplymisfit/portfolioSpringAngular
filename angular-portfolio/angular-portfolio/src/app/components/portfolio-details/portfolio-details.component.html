@@ -7,7 +7,7 @@
       <img
         style="width: 70%; height: auto; margin-bottom: 5%"
         src="{{ portfolio.imageUrl }}"
-        class="detail-img"
+        class="rounded"
       />
     </div>
 
@@ -15,7 +15,10 @@
 
     <h2>Description</h2>
     <p>{{ portfolio.description }}</p>
-    <a style="margin-bottom: 1%" class="btn btn-primary" routerLink="/portfolio"
+    <a
+      style="margin-bottom: 1%"
+      class="btn btn-warning btn-lg"
+      routerLink="/portfolio"
       >Go back</a
     >
   </div>

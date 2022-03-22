@@ -8,6 +8,7 @@
 }
 
 .project-cards > li {
+  border: 2px solid #ffca2c;
   height: 20rem;
   position: relative;
   background-size: cover;
