@@ -10,6 +10,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { WebpagesComponent } from './components/webpages/webpages.component';
 import { PortfolioDetailsComponent } from './components/portfolio-details/portfolio-details.component';
 import { HomeComponent } from './components/home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
   { path: 'portfolio/:id', component: PortfolioDetailsComponent },
@@ -29,7 +30,12 @@ const routes: Routes = [
     PortfolioDetailsComponent,
     HomeComponent,
   ],
-  imports: [RouterModule.forRoot(routes), BrowserModule, HttpClientModule],
+  imports: [
+    RouterModule.forRoot(routes),
+    BrowserModule,
+    HttpClientModule,
+    NgbModule,
+  ],
   providers: [PortfolioService],
   bootstrap: [AppComponent],
 })
