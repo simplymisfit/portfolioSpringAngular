@@ -7,7 +7,6 @@ import { PortfolioService } from './services/portfolio.service';
 import { PortfolioListComponent } from './components/portfolio-list/portfolio-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
-import { WebpagesComponent } from './components/webpages/webpages.component';
 import { PortfolioDetailsComponent } from './components/portfolio-details/portfolio-details.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -19,7 +18,8 @@ const routes: Routes = [
   { path: 'portfolio', component: PortfolioListComponent },
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'webpages', component: WebpagesComponent },
+  { path: 'page-one', component: PageOneComponent },
+  { path: 'page-two', component: PageTwoComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
@@ -28,7 +28,6 @@ const routes: Routes = [
     AppComponent,
     PortfolioListComponent,
     ContactComponent,
-    WebpagesComponent,
     PortfolioDetailsComponent,
     HomeComponent,
     PageOneComponent,
