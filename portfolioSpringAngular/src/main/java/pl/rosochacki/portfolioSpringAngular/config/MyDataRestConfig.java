@@ -7,6 +7,7 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import pl.rosochacki.portfolioSpringAngular.entity.Portfolio;
+import pl.rosochacki.portfolioSpringAngular.entity.Quote;
 
 import javax.persistence.EntityManager;
 import javax.persistence.metamodel.EntityType;
@@ -29,8 +30,11 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
 
         HttpMethod[] theUnsupportedActions = {HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE};
 
-        //disable HTTP methods for Product: PUT, POST and DELETE
+        //disable HTTP methods for Portfolio: PUT, POST and DELETE
         disableHttpMethods(Portfolio.class, config, theUnsupportedActions);
+
+        //disable HTTP methods for Quote: PUT, POST and DELETE
+        disableHttpMethods(Quote.class, config, theUnsupportedActions);
 
         //call an internal helped method
         exposeIds(config);
