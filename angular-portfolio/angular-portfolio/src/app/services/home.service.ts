@@ -1,4 +1,5 @@
 import { HttpClient } from '@angular/common/http';
+import { Quote } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { Home } from '../common/home';
@@ -11,15 +12,8 @@ export class HomeService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getQuotesList(): Observable<Home[]> {
-    return this.httpClient
-      .get<GetResponse>(this.baseUrl)
-      .pipe(map((response) => response._embedded.quotes));
+  getQuote(theQuoteId: number): Observable<Home> {
+    const quoteUrl = `${this.baseUrl}/${theQuoteId}`;
+    return this.httpClient.get<Home>(quoteUrl);
   }
-}
-
-interface GetResponse {
-  _embedded: {
-    quotes: Home[];
-  };
 }

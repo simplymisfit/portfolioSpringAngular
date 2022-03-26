@@ -1,11 +1,10 @@
 <div class="pt-5 pb-5 mx-auto" style="width: 70%">
-  <div class="display-1">Quote</div>
   <figure class="text-center">
     <blockquote class="blockquote">
-      <p>A well-known quote, contained in a blockquote element.</p>
+      <div class="display-3">{{ home.quote }}</div>
     </blockquote>
     <figcaption class="blockquote-footer">
-      Someone famous in <cite title="Source Title">Source Title</cite>
+      {{ home.authorName }} {{ home.authorSurname }}
     </figcaption>
   </figure>
   <hr />
