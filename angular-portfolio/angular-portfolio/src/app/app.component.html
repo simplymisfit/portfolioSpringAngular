@@ -28,19 +28,29 @@
     <div id="navbarSupportedContent" class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a routerLink="/" class="nav-link">Home </a>
+          <a routerLink="/" class="nav-link"
+            >Home <fa-icon [icon]="faHouse"></fa-icon
+          ></a>
         </li>
         <li class="nav-item">
-          <a routerLink="portfolio" class="nav-link">Portfolios</a>
+          <a routerLink="portfolio" class="nav-link"
+            >Portfolios <fa-icon [icon]="faFile"></fa-icon
+          ></a>
         </li>
         <li class="nav-item">
-          <a routerLink="page-one" class="nav-link">Page one</a>
+          <a routerLink="page-one" class="nav-link"
+            >Page one <fa-icon [icon]="faWindowMaximize"></fa-icon
+          ></a>
         </li>
         <li class="nav-item">
-          <a routerLink="page-two" class="nav-link">Page two</a>
+          <a routerLink="page-two" class="nav-link"
+            >Page two <fa-icon [icon]="faWindowMaximize"></fa-icon
+          ></a>
         </li>
         <li class="nav-item">
-          <a routerLink="contact" class="nav-link">Contact</a>
+          <a routerLink="contact" class="nav-link"
+            >Contact <fa-icon [icon]="faAddressBook"></fa-icon
+          ></a>
         </li>
       </ul>
     </div>
@@ -55,13 +65,16 @@
   <div class="container text-center">
     <small
       >Copyright &copy; Filip Rosochacki
-      <a target="_blank" href="https://github.com/simplymisfit"
-        ><fa-icon [icon]="faGithub"></fa-icon
-      ></a>
+      <a target="_blank" href="https://github.com/simplymisfit">
+        <fa-icon [icon]="faGithub"></fa-icon>
+      </a>
       <a
+        style="margin-left: 5px"
         target="_blank"
         href="https://www.linkedin.com/in/filip-rosochacki-66201b233/"
-        ><fa-icon [icon]="faLinkedin"></fa-icon></a
-    ></small>
+      >
+        <fa-icon [icon]="faLinkedin"></fa-icon>
+      </a>
+    </small>
   </div>
 </footer>
