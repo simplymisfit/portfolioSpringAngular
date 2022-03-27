@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageOneComponent } from './components/page-one/page-one.component';
 import { PageTwoComponent } from './components/page-two/page-two.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const routes: Routes = [
   { path: 'portfolio/:id', component: PortfolioDetailsComponent },
@@ -38,6 +39,7 @@ const routes: Routes = [
     BrowserModule,
     HttpClientModule,
     NgbModule,
+    FontAwesomeModule,
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent],
